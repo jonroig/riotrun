@@ -21,8 +21,6 @@ phases:
             - ls -la
             - pwd
             - npm run build
-            - cd build
-            - ls -la
     post_build:
         commands:
             - pwd
