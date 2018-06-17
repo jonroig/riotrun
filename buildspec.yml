@@ -18,6 +18,8 @@ phases:
         commands:
             # Building the react app and deploying to S3 bucket, invalidating the CloudFront
             - ls -la
+            - cd runriot
+            - ls -la
             - pwd
             - npm run build
             # - ls -al
