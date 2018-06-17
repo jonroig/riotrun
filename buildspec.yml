@@ -11,7 +11,7 @@ phases:
             - apt-get install -y yarn
             # Installing react
             - yarn install
-    pre_build:
+    # pre_build:
         # commands:
             # Pulling the environment files from private bucket
     build:
