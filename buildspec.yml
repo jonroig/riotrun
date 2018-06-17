@@ -26,7 +26,7 @@ phases:
             # copy the distribution to s3
             - pwd
             - ls -la
-            - aws s3 cp build s3://riot.run/ --recursive
+            - aws s3 cp build s3://arn:aws:s3:::riot.run/ --recursive
 
 artifacts:
     base-directory: 'riotrun'
