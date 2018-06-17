@@ -17,7 +17,7 @@ phases:
     build:
         commands:
             # Building the react app and deploying to S3 bucket, invalidating the CloudFront
-            - cd riotrun && ls -al
+            - ls -la
             - pwd
             - npm run build
             # - ls -al
