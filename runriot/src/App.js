@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Riot.run</h1>
         </header>
         <p className="App-intro">
-          Something really interesting will happen here...
+          Something really interesting is happening here...
         </p>
       </div>
     );
