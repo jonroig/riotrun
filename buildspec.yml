@@ -23,10 +23,11 @@ phases:
             - npm run build
     post_build:
         commands:
-            # copy the distribution to s3
+            # Deploy! Copy the distribution to s3...
             - pwd
             - ls -la
-            - aws s3 cp build s3://riot.run/ --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+            - CI=true npm test
+            # aws s3 cp build s3://riot.run/ --recursive --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
 
 artifacts:
     base-directory: 'riotrun'
